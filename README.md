@@ -37,7 +37,27 @@ etc.) — that logic lives entirely in the host application's own Spring AI tool
 
 ## Using it in a host application
 
-This library isn't published to a binary repository yet. Consume it from source via a Gradle
+### From Maven Central
+
+```kotlin
+dependencies {
+    implementation("io.github.sganesh-code:tark-embedded-harness:0.1.0")
+}
+```
+
+```xml
+<dependency>
+    <groupId>io.github.sganesh-code</groupId>
+    <artifactId>tark-embedded-harness</artifactId>
+    <version>0.1.0</version>
+</dependency>
+```
+
+See [PUBLISHING.md](PUBLISHING.md) for how releases get there.
+
+### From source
+
+To iterate on the library and a host application together, consume it from source via a Gradle
 composite build in the host project's `settings.gradle.kts`:
 
 ```kotlin
@@ -48,7 +68,7 @@ and depend on it as usual:
 
 ```kotlin
 dependencies {
-    implementation("com.tark:tark-embedded-harness")
+    implementation("io.github.sganesh-code:tark-embedded-harness")
 }
 ```
 

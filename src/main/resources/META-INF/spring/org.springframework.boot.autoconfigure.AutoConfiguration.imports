@@ -1,0 +1,2 @@
+com.tark.harness.autoconfigure.TarkHarnessAutoConfiguration
+com.tark.harness.autoconfigure.TarkWebSocketAutoConfiguration
